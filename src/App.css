@@ -71,3 +71,16 @@ h2{
 span{
   margin-left: 7px;
 }
+.delete-btn{
+  background-color: rgb(209, 0, 0);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-btn:hover{
+  background-color: rgb(190, 0, 0);
+}

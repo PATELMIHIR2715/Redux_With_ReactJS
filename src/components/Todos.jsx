@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { removeTodo } from "../features/todoSlice";
 
 function Todos() {
-    console.log(useSelector((state) => state.todos));
+    // console.log(useSelector((state) => state.todos));
     
     const todos = useSelector(state => state.todos);
     const dispatch = useDispatch()
@@ -16,7 +16,7 @@ function Todos() {
       {todos.map((e, index) => (
         <li key={e.id}>
           <span>{ index+1 }. </span>
-          { e.text }<button onClick={() => HandleDelete(e.id)}>Delete</button>
+          { e.text }<button className="delete-btn" onClick={() => HandleDelete(e.id)}>Delete</button>
         </li>
       ))}
     </div>
